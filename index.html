@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mode Stepzone - Dans Kursları</title>
+  <meta name="description" content="Mode Stepzone'a hoş geldiniz! Türkiye'de her seviyeden dans kursları sunuyoruz.">
+  <meta name="keywords" content="dans kursları, dans, dans stüdyosu, dans eğitimi, Mode Stepzone">
+  <meta property="og:title" content="Mode Stepzone - Türkiye'de Dans Kursları">
+  <meta property="og:description" content="Mode Stepzone ile dans etmeye başlayın! Her seviye için kurslar, en iyi eğitmenler.">
+  <meta property="og:image" content="./images/dance_class.jpg">
+  <meta property="og:url" content="https://mode-stepzone.com">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="preload" as="image" href="images/dance_class.jpg">
+</head>
+<body class="font-sans bg-gray-900 text-pink-300 text-base" style="font-size: 16px;">
+
+ <header class="bg-purple-900 text-white shadow-md">
+  <div class="container mx-auto flex justify-between items-center px-6 py-6">
+    <h1 class="text-4xl font-bold">Mode Stepzone</h1>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="/" class="hover:text-pink-400 transition">Ana Sayfa</a>
+      <a href="/#about" class="hover:text-pink-400 transition">Hakkımızda</a>
+      <a href="/#subscriptions" class="hover:text-pink-400 transition">Abonelikler</a>
+      <a href="/#contact" class="hover:text-pink-400 transition">İletişim</a>
+      <a href="/#faq" class="hover:text-pink-400 transition">SSS</a>
+    </nav>
+    <!-- Mobile Menu Toggle -->
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <i class="fas fa-bars fa-2x"></i>
+    </button>
+  </div>
+  <!-- Mobile Navigation -->
+  <nav id="menu" class="hidden md:hidden bg-purple-900">
+    <ul class="flex flex-col space-y-4 text-lg p-6">
+      <li><a href="/" class="hover:text-pink-400 transition block">Ana Sayfa</a></li>
+      <li><a href="/#about" class="hover:text-pink-400 transition block">Hakkımızda</a></li>
+      <li><a href="/#subscriptions" class="hover:text-pink-400 transition block">Abonelikler</a></li>
+      <li><a href="/#contact" class="hover:text-pink-400 transition block">İletişim</a></li>
+      <li><a href="/#faq" class="hover:text-pink-400 transition block">SSS</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-16">
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col md:flex-row items-center bg-gray-800 p-10 rounded-lg shadow-lg mb-16">
+      <div class="md:w-1/2 md:mr-8">
+        <h2 class="text-5xl font-extrabold text-white mb-6">Dansın Büyüsüne Adım Atın!</h2>
+        <p class="text-gray-300 text-lg mb-8">Her seviyeye uygun kurslarımızla ritmin ve enerjinin keyfini çıkarın. Kendinizi ifade edin, özgüveninizi keşfedin.</p>
+        <a href="#subscriptions" class="bg-pink-500 text-white px-8 py-4 rounded-full text-lg shadow-md hover:bg-pink-600 transition">Kursa Katılın</a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="images/dance_class.jpg" alt="Dans Dersi" class="rounded-lg shadow-md" width="800" height="600">
+
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="bg-gray-700 p-10 rounded-lg shadow-lg mb-16">
+      <h3 class="text-4xl font-bold text-white mb-8">Bizimle Çalışmanın Farklı Avantajları</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-user-graduate fa-3x text-white"></i>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Alanında Uzman Eğitmenler</h4>
+            <p class="text-gray-300">Profesyonel dansçıların deneyimiyle hedeflerinize ulaşmanız için size özel rehberlik sağlıyoruz.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-clock fa-3x text-white"></i>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Esnek Ders Programı</h4>
+            <p class="text-gray-300">Günlük hayatınıza uyum sağlayan, dilediğiniz saatlerde katılabileceğiniz ders saatleri sunuyoruz.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-star fa-3x text-white"></i>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Samimi ve Keyifli Ortam</h4>
+            <p class="text-gray-300">Her adımda kendinizi özel hissedeceğiniz, enerjik ve dostça bir ortamda dansın tadını çıkarın.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="flex flex-col md:flex-row items-center bg-gradient-to-r from-purple-800 to-pink-600 p-10 rounded-lg shadow-lg mb-16 text-white">
+      <div class="md:w-1/2 md:mr-8">
+        <h3 class="text-4xl font-bold mb-4">Hakkımızda</h3>
+        <p class="text-lg">
+          Mode Stepzone, dansın evrensel diliyle hayatınıza renk katmayı hedefleyen modern bir dans stüdyosudur. Kuruluşumuzdan bu yana, her yaş ve deneyim seviyesinden dansseverlere en kaliteli eğitimi sunarak, özgürce kendilerini ifade etmelerine ilham veriyoruz.
+        </p>
+        <p class="text-lg mt-4">
+          Stüdyomuzda modern ve klasik dans tekniklerini harmanlayan derslerimizde, uzman eğitmenlerimiz eşliğinde kişisel gelişiminizi destekliyoruz. Amacımız, dansı sadece bir hareket sanatı değil, aynı zamanda bir yaşam tarzı haline getirmektir.
+        </p>
+        <br>
+        <a href="#about" class="bg-pink-500 text-white px-8 py-4 rounded-full text-lg shadow-md hover:bg-pink-600 transition">Daha Fazla Bilgi</a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="images/about_us.jpg" alt="Hakkımızda" class="rounded-lg shadow-md" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-gray-700 p-10 rounded-lg shadow-lg mb-16">
+      <h3 class="text-4xl font-bold text-white mb-8">Galeri</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="images/gallery1.jpg" alt="Galeri Resim 1" class="rounded-lg shadow-md" loading="lazy">
+        <img src="images/gallery2.jpg" alt="Galeri Resim 2" class="rounded-lg shadow-md" loading="lazy">
+        <img src="images/gallery3.jpg" alt="Galeri Resim 3" class="rounded-lg shadow-md" loading="lazy">
+        <img src="images/gallery4.jpg" alt="Galeri Resim 4" class="rounded-lg shadow-md" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="bg-pink-600 p-10 rounded-lg shadow-lg mb-16">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <img src="images/dance_contact.jpg" alt="Bize Ulaşın" class="rounded-lg shadow-md mb-6 md:mb-0" loading="lazy">
+        </div>
+        <div class="md:w-1/2 md:ml-8 bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-4xl font-bold text-purple-900 mb-6">Bize Ulaşın</h2>
+          <form action="#" method="POST">
+            <div class="mb-6">
+              <label for="name" class="block text-lg font-semibold mb-2">Adınız</label>
+              <input type="text" id="name" name="name" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Adınızı giriniz" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-lg font-semibold mb-2">Email Adresiniz</label>
+              <input type="email" id="email" name="email" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Email adresinizi giriniz" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-lg font-semibold mb-2">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Mesajınızı giriniz" required></textarea>
+            </div>
+            <button type="submit" class="bg-green-700 text-white px-8 py-4 rounded-full text-lg shadow-md hover:bg-green-800 transition">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscriptions Section -->
+    <section id="subscriptions" class="bg-gray-800 p-10 rounded-lg shadow-lg mb-16">
+      <h2 class="text-5xl font-extrabold text-white mb-6">Abonelikler</h2>
+      <p class="text-gray-300 text-lg mb-8">Her dans tutkununun beklentilerine uygun farklı abonelik seçeneklerimizle, başlangıçtan ileri düzeye kadar kapsamlı eğitim imkanı sunuyoruz. Kendi ihtiyaçlarınıza en uygun programı seçin:</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold mb-4">Yeni Başlayan</h3>
+          <p class="text-lg text-gray-700 mb-6">Dans dünyasına adım atmak isteyenler için ideal başlangıç programı.</p>
+          <ul class="text-left list-disc list-inside mb-6">
+            <li>Aylık 8 ders</li>
+            <li>En fazla 10 kişilik grup</li>
+            <li>Temel dans hareketleri</li>
+          </ul>
+          <p class="text-3xl font-bold text-white mb-4">100 TL/ay</p>
+          <a href="#contact" class="bg-pink-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-pink-600 transition">Kayıt Ol</a>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold mb-4">İleri Düzey</h3>
+          <p class="text-lg text-gray-700 mb-6">Temel bilgileri tamamlamış dansçılar için teknik ve stil gelişimine odaklı program.</p>
+          <ul class="text-left list-disc list-inside mb-6">
+            <li>Aylık 12 ders</li>
+            <li>En fazla 8 kişilik grup</li>
+            <li>Teknik ve stil geliştirme</li>
+          </ul>
+          <p class="text-3xl font-bold text-white mb-4">150 TL/ay</p>
+          <a href="#contact" class="bg-pink-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-pink-600 transition">Kayıt Ol</a>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold mb-4">Yoğun Program</h3>
+          <p class="text-lg text-gray-700 mb-6">Dans tutkunları için sınırsız ders ve bireysel seans seçenekleri sunan yoğun eğitim programı.</p>
+          <ul class="text-left list-disc list-inside mb-6">
+            <li>Sınırsız ders imkanı</li>
+            <li>Bireysel antrenmanlar</li>
+            <li>Performans hazırlığı</li>
+          </ul>
+          <p class="text-3xl font-bold text-white mb-4">250 TL/ay</p>
+          <a href="#contact" class="bg-pink-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-pink-600 transition">Kayıt Ol</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="bg-gray-700 p-10 rounded-lg shadow-lg mb-16">
+      <h3 class="text-4xl font-bold text-white mb-8">Yaklaşan Etkinlikler</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+          <img src="images/event1.jpg" alt="Etkinlik 1" class="w-full rounded-lg mb-4" loading="lazy">
+          <h4 class="text-3xl font-bold text-white mb-2">Latin Dans Gecesi</h4>
+          <p class="text-lg font-bold text-gray-800 mb-4">Tarih: <span class="text-pink-600">15 Ekim, 19:00</span></p>
+          <p class="text-lg text-gray-700 mb-4">Latin Amerika danslarının atmosferini yaşamak için Latin Dans Gecemize davetlisiniz.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+          <img src="images/event2.jpg" alt="Etkinlik 2" class="w-full rounded-lg mb-4" loading="lazy">
+          <h4 class="text-3xl font-bold text-white mb-2">Modern Koreografi Atölyesi</h4>
+          <p class="text-lg font-bold text-gray-800 mb-4">Tarih: <span class="text-pink-600">22 Ekim, 14:00</span></p>
+          <p class="text-lg text-gray-700 mb-4">Modern koreografi dünyasına adım atın ve öğretmenlerimizle yaratıcı dans deneyimi yaşayın.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-800 p-10 rounded-lg shadow-lg mb-16">
+      <h2 class="text-5xl font-extrabold text-white mb-6">Sıkça Sorulan Sorular</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(1)">Ders kaydı nasıl yapılır?</h3>
+          <p id="answer1" class="text-lg text-gray-300 hidden">Ders kaydınızı 'Abonelikler' bölümümüz üzerinden veya 'İletişim' bölümünden bize ulaşarak gerçekleştirebilirsiniz. Kayıtlar telefon veya e-posta yoluyla da alınmaktadır.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(2)">Başlamak için özel bir deneyim gerekiyor mu?</h3>
+          <p id="answer2" class="text-lg text-gray-300 hidden">Hayır, kurslarımız tüm seviyelere uygundur. Yeni başlayanlar temel hareketleri öğrenirken, ileri düzey öğrenciler için gelişmiş ders seçenekleri sunuyoruz.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(3)">Abonelik ödemeleri nasıl yapılıyor?</h3>
+          <p id="answer3" class="text-lg text-gray-300 hidden">Ödemelerinizi aylık ya da çok aylık paketler halinde gerçekleştirebilirsiniz. Nakit, kredi kartı veya online transfer seçenekleri mevcuttur. Detaylar için 'Abonelikler'e göz atın.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(4)">Yaş sınırlaması var mı?</h3>
+          <p id="answer4" class="text-lg text-gray-300 hidden">Stüdyomuz 6 yaş ve üzeri tüm öğrencileri kabul etmektedir. Çocuk, genç ve yetişkin gruplarına özel programlarımız bulunmaktadır.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(5)">Bir dersi kaçırırsam ne yapmalıyım?</h3>
+          <p id="answer5" class="text-lg text-gray-300 hidden">Dersi kaçırmanız durumunda telafi seçenekleri sunuyoruz. Lütfen alternatif ders tarihleri hakkında bilgi almak için bizimle iletişime geçin.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(6)">Hangi kıyafetler tercih edilmelidir?</h3>
+          <p id="answer6" class="text-lg text-gray-300 hidden">Rahat hareket edebileceğiniz, esnek ve konforlu kıyafetler önerilir. Ayrıca, dansa uygun ayakkabılar tercih edilmelidir.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(7)">Bireysel ders imkanı var mı?</h3>
+          <p id="answer7" class="text-lg text-gray-300 hidden">Evet, bireysel derslerimizle daha kişiselleştirilmiş bir eğitim alabilirsiniz. Detaylı bilgi için bizimle iletişime geçin.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(8)">Deneme dersi imkanı bulunuyor mu?</h3>
+          <p id="answer8" class="text-lg text-gray-300 hidden">Yeni öğrencilerimize deneme dersi sunuyoruz. Böylece stüdyomuzun atmosferini ve eğitmenlerimizi deneyimleyebilirsiniz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="bg-gray-700 p-10 rounded-lg shadow-lg mb-16">
+      <h2 class="text-5xl font-extrabold text-white mb-6">Öğretmenlerimiz</h2>
+      <p class="text-gray-300 text-lg mb-8">Ekibimiz, deneyimli profesyonellerden oluşmaktadır. Her seviyeden dansseverin potansiyelini ortaya çıkarmasına yardımcı oluyorlar. Öğretmenlerimizle tanışın:</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_1.jpg" alt="Elif Yıldırım" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Elif Yıldırım</h3>
+          <p class="text-lg mb-4">Modern dans ve hip-hop uzmanı</p>
+          <p class="text-gray-700">Elif, dans eğitiminde 10 yılı aşkın deneyime sahiptir. Öğrencilerin potansiyelini ortaya çıkarmaya yardımcı olur.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_2.jpg" alt="Mehmet Yılmaz" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Mehmet Yılmaz</h3>
+          <p class="text-lg mb-4">Klasik bale ve Latin dansları eğitmeni</p>
+          <p class="text-gray-700">Mehmet, tekniğe ve stile önem vererek öğrencilerin bale ve Latin danslarının inceliklerini kavramalarına yardımcı olur.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_3.jpg" alt="Ayşe Demir" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Ayşe Demir</h3>
+          <p class="text-lg mb-4">Contemporary ve jazz dansları eğitmeni</p>
+          <p class="text-gray-700">Ayşe, modern dans tarzları konusunda uzmandır ve her derste yaratıcı bir atmosfer sunar.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_4.jpg" alt="Ahmet Kaya" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Ahmet Kaya</h3>
+          <p class="text-lg mb-4">Sosyal danslar ve spor dansları eğitmeni</p>
+          <p class="text-gray-700">Ahmet, sosyal danslarda çok sayıda şampiyon olup, öğrencilerine enerjik dersler sunar.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_5.jpg" alt="Zeynep Öztürk" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Zeynep Öztürk</h3>
+          <p class="text-lg mb-4">Doğu dansları eğitmeni</p>
+          <p class="text-gray-700">Zeynep, Doğu danslarını öğreterek öğrencilerin beden farkındalığını ve zarafetini artırır.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md text-center">
+          <img src="images/teacher_6.jpg" alt="Mustafa Arslan" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="text-2xl font-bold mb-2">Mustafa Arslan</h3>
+          <p class="text-lg mb-4">Breakdance ve sokak dansları eğitmeni</p>
+          <p class="text-gray-700">Mustafa, enerjik sokak danslarıyla öğrencilerine breakdance’ın temellerini öğretir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="bg-gray-700 p-10 rounded-lg shadow-lg mb-16">
+      <h3 class="text-4xl font-bold text-white mb-8">Yaklaşan Etkinlikler</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+          <img src="images/event1.jpg" alt="Etkinlik 1" class="w-full rounded-lg mb-4" loading="lazy">
+          <h4 class="text-3xl font-bold text-white mb-2">Latin Dans Gecesi</h4>
+          <p class="text-lg font-bold text-gray-800 mb-4">Tarih: <span class="text-pink-600">15 Ekim, 19:00</span></p>
+          <p class="text-lg text-gray-700 mb-4">Latin Amerika danslarının atmosferini yaşamak için Latin Dans Gecemize davetlisiniz.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+          <img src="images/event2.jpg" alt="Etkinlik 2" class="w-full rounded-lg mb-4" loading="lazy">
+          <h4 class="text-3xl font-bold text-white mb-2">Modern Koreografi Atölyesi</h4>
+          <p class="text-lg font-bold text-gray-800 mb-4">Tarih: <span class="text-pink-600">22 Ekim, 14:00</span></p>
+          <p class="text-lg text-gray-700 mb-4">Modern koreografi dünyasına adım atın ve öğretmenlerimizle yaratıcı dans deneyimi yaşayın.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-800 p-10 rounded-lg shadow-lg mb-16">
+      <h2 class="text-5xl font-extrabold text-white mb-6">Sıkça Sorulan Sorular</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(1)">Ders kaydı nasıl yapılır?</h3>
+          <p id="answer1" class="text-lg text-gray-300 hidden">Ders kaydınızı 'Abonelikler' bölümümüz üzerinden veya 'İletişim' bölümünden bize ulaşarak gerçekleştirebilirsiniz. Kayıtlar telefon veya e-posta yoluyla da alınmaktadır.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(2)">Başlamak için özel bir deneyim gerekiyor mu?</h3>
+          <p id="answer2" class="text-lg text-gray-300 hidden">Hayır, kurslarımız tüm seviyelere uygundur. Yeni başlayanlar temel hareketleri öğrenirken, ileri düzey öğrenciler için gelişmiş ders seçenekleri sunuyoruz.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(3)">Abonelik ödemeleri nasıl yapılıyor?</h3>
+          <p id="answer3" class="text-lg text-gray-300 hidden">Ödemelerinizi aylık ya da çok aylık paketler halinde gerçekleştirebilirsiniz. Nakit, kredi kartı veya online transfer seçenekleri mevcuttur. Detaylar için 'Abonelikler'e göz atın.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(4)">Yaş sınırlaması var mı?</h3>
+          <p id="answer4" class="text-lg text-gray-300 hidden">Stüdyomuz 6 yaş ve üzeri tüm öğrencileri kabul etmektedir. Çocuk, genç ve yetişkin gruplarına özel programlarımız bulunmaktadır.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(5)">Bir dersi kaçırırsam ne yapmalıyım?</h3>
+          <p id="answer5" class="text-lg text-gray-300 hidden">Dersi kaçırmanız durumunda telafi seçenekleri sunuyoruz. Lütfen alternatif ders tarihleri hakkında bilgi almak için bizimle iletişime geçin.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(6)">Hangi kıyafetler tercih edilmelidir?</h3>
+          <p id="answer6" class="text-lg text-gray-300 hidden">Rahat hareket edebileceğiniz, esnek ve konforlu kıyafetler önerilir. Ayrıca, dansa uygun ayakkabılar tercih edilmelidir.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(7)">Bireysel ders imkanı var mı?</h3>
+          <p id="answer7" class="text-lg text-gray-300 hidden">Evet, bireysel derslerimizle daha kişiselleştirilmiş bir eğitim alabilirsiniz. Detaylı bilgi için bizimle iletişime geçin.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-pink-300 mb-2 cursor-pointer" onclick="toggleAnswer(8)">Deneme dersi imkanı bulunuyor mu?</h3>
+          <p id="answer8" class="text-lg text-gray-300 hidden">Yeni öğrencilerimize deneme dersi sunuyoruz. Böylece stüdyomuzun atmosferini ve eğitmenlerimizi deneyimleyebilirsiniz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section (Tekrar) -->
+    <section id="contact" class="bg-teal-400 p-10 rounded-lg shadow-lg mb-16">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-3xl font-bold mb-4 text-white">İletişim Bilgilerimiz</h3>
+          <p class="text-lg mb-4 text-white"><i class="fas fa-phone-alt"></i> Telefon: +905324111148</p>
+          <p class="text-lg mb-4 text-white"><i class="fas fa-envelope"></i> Email: info@mode-stepzone.com</p>
+          <p class="text-lg mb-4 text-white"><i class="fas fa-map-marker-alt"></i> Adres: <a href="https://www.google.com/maps/place/Cihann%C3%BCma+Mahallesi+Barbaros+Bulvar%C4%B1+De%C4%9Fer+Palas+Ap.+No:37+K:5+D:8,+34353,+T%C3%BCrkiye" class="hover:text-teal-300 transition text-white" target="_blank" rel="noopener noreferrer">Cihannüma Mahallesi Barbaros Bulvarı, 34353, Türkiye</a></p>
+          <div class="mt-6">
+            <img src="images/map_placeholder.jpg" alt="Harita" style="width:100%; height:300px; border:0;" loading="lazy">
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-4xl font-bold text-purple-900 mb-6">Bize Ulaşın</h2>
+          <form action="#" method="POST">
+            <div class="mb-6">
+              <label for="name" class="block text-lg font-semibold mb-2">Adınız</label>
+              <input type="text" id="name" name="name" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Adınızı giriniz" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-lg font-semibold mb-2">Email Adresiniz</label>
+              <input type="email" id="email" name="email" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Email adresinizi giriniz" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-lg font-semibold mb-2">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Mesajınızı giriniz" required></textarea>
+            </div>
+            <button type="submit" class="bg-green-700 text-white px-8 py-4 rounded-full text-lg shadow-md hover:bg-green-800 transition">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="bg-purple-900 text-white py-8">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg mb-4 md:mb-0">
+      <li>
+        <a href="/privacy.html" class="hover:text-yellow-300 transition" aria-label="Gizlilik Politikası sayfasını ziyaret edin">
+          Gizlilik Politikası
+        </a>
+      </li>
+      <li>
+        <a href="/terms.html" class="hover:text-yellow-300 transition" aria-label="Kullanım Şartları sayfasını ziyaret edin">
+          Kullanım Şartları
+        </a>
+      </li>
+      <li>
+        <a href="/cookies.html" class="hover:text-yellow-300 transition" aria-label="Çerez Politikası sayfasını ziyaret edin">
+          Çerez Politikası
+        </a>
+      </li>
+    </ul>
+    <ul class="flex space-x-6">
+      <li>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300 transition" aria-label="Facebook sayfasını ziyaret edin">
+          <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300 transition" aria-label="Instagram sayfasını ziyaret edin">
+          <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300 transition" aria-label="Twitter sayfasını ziyaret edin">
+          <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  <script>
+    // Form gönderme işlemi: form gönderildiğinde "İletişim" bölümüne yönlendir.
+    document.addEventListener("DOMContentLoaded", function() {
+      const forms = document.querySelectorAll("form");
+      forms.forEach(form => {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          window.location.href = "/thanks.html";
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    menuToggle.addEventListener("click", function() {
+      menu.classList.toggle("hidden");
+    });
+  });
+  </script>
+  <script>
+    // SSS cevaplarını aç/kapat
+    function toggleAnswer(id) {
+      const answer = document.getElementById(`answer${id}`);
+      answer.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
